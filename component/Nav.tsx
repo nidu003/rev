@@ -3,7 +3,6 @@ import Link from 'next/link';
 const Nav = () => {
   return (
     <nav className="nav" style={{ backgroundColor: 'white' }}> 
-    <i class="fa fa-times" onclick="hideMenu()"></i>
       <ul>
         <li style={{ marginLeft: 50 }}>
           <Link href="/">
@@ -50,7 +49,7 @@ const Nav = () => {
             Article
           </Link>
         </li>
-        <i class="fa fa-bars"onclick="showMenu()"></i>
+      
       </ul>
     </nav>
   );

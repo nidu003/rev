@@ -28,11 +28,10 @@ html,body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping of items */
 }
 
 .nav li {
-  margin-right: 20px; /* Space between items */
+  margin-right: 20px;
 }
 
 .nav a {
@@ -57,7 +56,7 @@ html,body {
     display: flex;
     flex-direction: row; /* Keep menu items in a row */
     justify-content: space-around;
-    width: auto; /* Auto width to fit items */
+    width: 100%; /* Spread menu items across the full width */
   }
 
   .nav li {
@@ -79,23 +78,20 @@ html,body {
 /* Mobile (max-width: 768px) */
 @media only screen and (max-width: 768px) {
   .nav {
-    flex-direction: row; /* Keep items horizontal */
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Space between items */
-    padding: 0.5rem; /* Adjust padding for mobile */
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Increase padding for touch devices */
   }
 
   .nav ul {
-    flex-direction: row; /* Keep menu items in a row */
+    flex-direction: row; /* Keep the menu items in a row */
     padding: 0;
-    width: auto; /* Make the ul take auto width */
-    overflow: hidden; /* Prevent overflow */
-    white-space: nowrap; /* Prevent items from wrapping */
-    justify-content: flex-start; /* Align items to the left */
+    width: 100%; /* Make the ul take full width */
   }
 
   .nav li {
-    margin-right: 15px; /* Maintain space between items */
+    margin-right: 10px; /* Space between items */
   }
 
   .nav a {
@@ -103,11 +99,12 @@ html,body {
   }
 
   .nav img {
-    width: 40px; /* Adjust image size for mobile */
+    width: 30px; /* Adjust image size for mobile */
     height: auto; /* Maintain aspect ratio */
+    margin-left: 0;
+    margin-right: 0;
   }
 }
-
 
 /*Hero*/
 /* Base styles for desktop */
