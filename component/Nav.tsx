@@ -37,7 +37,7 @@ const Nav = () => {
         </li>
         <li style={{ display: 'flex', alignItems: 'center', marginLeft: 20 }}>
           <Link href="/refer-reoccur">
-            Refer & Reoccur
+            $$Refer & Reoccur$$
           </Link>
         </li>
         <li style={{ display: 'flex', alignItems: 'center', marginLeft: 20 }}>
