@@ -21,6 +21,8 @@ html,body {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   margin-left: 0; /* No negative margins */
+  width: 100%; /* Ensure full width */
+  overflow-x: auto; /* Add horizontal scrolling if needed */
 }
 
 .nav ul {
@@ -28,20 +30,33 @@ html,body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  width: 100%; /* Make the ul take full width */
 }
 
 .nav li {
   margin-right: 20px;
+  flex: 1; /* Distribute space evenly */
+  display: inline-block; /* Ensure items are displayed inline */
 }
 
 .nav a {
   text-decoration: none;
   color: #333;
   transition: color 0.2s ease;
+  display: inline-block; /* Ensure links are displayed inline */
 }
 
 .nav a:hover {
   color: #666;
+}
+
+.nav img {
+  width: 30px; /* Adjust image size */
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  display: inline-block; /* Ensure images are displayed inline */
 }
 
 /* Tablet (max-width: 1024px) */
@@ -82,30 +97,35 @@ html,body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem; /* Increase padding for touch devices */
+    overflow-x: auto; /* Add horizontal scrolling if needed */
   }
 
   .nav ul {
     flex-direction: row; /* Keep the menu items in a row */
     padding: 0;
     width: 100%; /* Make the ul take full width */
+    overflow-x: auto; /* Add horizontal scrolling if needed */
   }
 
   .nav li {
     margin-right: 10px; /* Space between items */
+    flex: 1; /* Distribute space evenly */
+    display: inline-block; /* Ensure items are displayed inline */
   }
 
   .nav a {
     font-size: 14px; /* Smaller font size for mobile */
+    display: inline-block; /* Ensure links are displayed inline */
   }
 
   .nav img {
     width: 30px; /* Adjust image size for mobile */
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     margin-left: 0;
     margin-right: 0;
+    display: inline-block; /* Ensure images are displayed inline */
   }
 }
-
 /*Hero*/
 /* Base styles for desktop */
 .containerh {
