@@ -28,10 +28,11 @@ html,body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .nav li {
-  margin-right: 20px;
+  margin-right: 20px; /* Space between items */
 }
 
 .nav a {
@@ -47,16 +48,14 @@ html,body {
 /* Tablet (max-width: 1024px) */
 @media only screen and (max-width: 1024px) {
   .nav {
-    flex-direction: row; /* Keep horizontal layout for tablet */
-    justify-content: space-between;
     padding: 0.5rem 1rem; /* Adjust padding */
   }
 
   .nav ul {
     display: flex;
     flex-direction: row; /* Keep menu items in a row */
-    justify-content: space-around;
-    width: 100%; /* Spread menu items across the full width */
+    justify-content: flex-start; /* Align items to the left */
+    width: auto; /* Auto width to fit items */
   }
 
   .nav li {
@@ -70,29 +69,28 @@ html,body {
   .nav img {
     width: 30px; /* Adjust logo size for tablet */
     height: auto;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
 /* Mobile (max-width: 768px) */
 @media only screen and (max-width: 768px) {
   .nav {
-    flex-direction: row; /* Keep items horizontal on mobile */
-    justify-content: space-between; /* Maintain spacing */
-    align-items: center; /* Center align items */
-    padding: 0.5rem; /* Adjust padding for touch devices */
+    flex-direction: row; /* Keep items horizontal */
+    justify-content: space-between; /* Space between items */
+    padding: 0.5rem; /* Adjust padding for mobile */
   }
 
   .nav ul {
-    flex-direction: row; /* Keep the menu items in a row */
+    flex-direction: row; /* Keep items in a row */
     padding: 0;
-    width: auto; /* Let the ul size automatically */
+    width: auto; /* Make the ul take auto width */
+    overflow: hidden; /* Prevent overflow */
+    white-space: nowrap; /* Prevent items from wrapping */
+    justify-content: flex-start; /* Align items to the left */
   }
 
   .nav li {
     margin-right: 15px; /* Maintain space between items */
-    margin-bottom: 0; /* No bottom margin since items are in a row */
   }
 
   .nav a {
@@ -102,8 +100,37 @@ html,body {
   .nav img {
     width: 40px; /* Adjust image size for mobile */
     height: auto; /* Maintain aspect ratio */
-    margin-left: 0;
-    margin-right: 0;
+  }
+
+  /* Optional: Add a responsive hamburger menu for smaller screens */
+  .hamburger {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    cursor: pointer; /* Pointer on hover */
+  }
+
+  .hamburger div {
+    height: 3px;
+    width: 30px;
+    background-color: #333;
+    margin: 4px 0; /* Space between hamburger lines */
+  }
+
+  /* Show hamburger menu on smaller screens */
+  @media only screen and (max-width: 768px) {
+    .hamburger {
+      display: flex; /* Show hamburger menu */
+    }
+
+    .nav ul {
+      display: none; /* Hide menu by default on mobile */
+      flex-direction: column; /* Stack vertically when shown */
+      width: 100%; /* Full width */
+    }
+
+    .nav.active ul {
+      display: flex; /* Show menu when active */
+    }
   }
 }
 
