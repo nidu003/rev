@@ -14,7 +14,6 @@ html,body {
 }
 
 /*Nav*/
-/* Base styles for desktop */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -79,20 +78,21 @@ html,body {
 /* Mobile (max-width: 768px) */
 @media only screen and (max-width: 768px) {
   .nav {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align on the left */
-    padding: 1rem; /* Increase padding for touch devices */
+    flex-direction: row; /* Keep items horizontal on mobile */
+    justify-content: space-between; /* Maintain spacing */
+    align-items: center; /* Center align items */
+    padding: 0.5rem; /* Adjust padding for touch devices */
   }
 
   .nav ul {
-    flex-direction: column; /* Stack the menu items vertically */
+    flex-direction: row; /* Keep the menu items in a row */
     padding: 0;
-    width: 100%; /* Make the ul take full width */
+    width: auto; /* Let the ul size automatically */
   }
 
   .nav li {
-    margin-right: 0; /* No right margin */
-    margin-bottom: 10px; /* Space between items */
+    margin-right: 15px; /* Maintain space between items */
+    margin-bottom: 0; /* No bottom margin since items are in a row */
   }
 
   .nav a {
@@ -839,14 +839,14 @@ button {
   }
 
   .imageContainerc {
-    flex-direction: column; /* Stack images vertically on smaller screens */
-    align-items: center; /* Center images */
-    justify-content: center; /* Center content */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
   }
 
   .home {
-    margin-left: 0; /* Center home section */
-    margin-top: 5%; /* Adjust top margin */
+    margin-left: 0; 
+    margin-top: 5%; 
   }
 
   .floatRight {
