@@ -28,7 +28,7 @@ html,body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: nowrap; /* Prevent wrapping of items */
 }
 
 .nav li {
@@ -48,13 +48,15 @@ html,body {
 /* Tablet (max-width: 1024px) */
 @media only screen and (max-width: 1024px) {
   .nav {
+    flex-direction: row; /* Keep horizontal layout for tablet */
+    justify-content: space-between;
     padding: 0.5rem 1rem; /* Adjust padding */
   }
 
   .nav ul {
     display: flex;
     flex-direction: row; /* Keep menu items in a row */
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: space-around;
     width: auto; /* Auto width to fit items */
   }
 
@@ -69,6 +71,8 @@ html,body {
   .nav img {
     width: 30px; /* Adjust logo size for tablet */
     height: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -76,12 +80,13 @@ html,body {
 @media only screen and (max-width: 768px) {
   .nav {
     flex-direction: row; /* Keep items horizontal */
+    align-items: center; /* Center align items vertically */
     justify-content: space-between; /* Space between items */
     padding: 0.5rem; /* Adjust padding for mobile */
   }
 
   .nav ul {
-    flex-direction: row; /* Keep items in a row */
+    flex-direction: row; /* Keep menu items in a row */
     padding: 0;
     width: auto; /* Make the ul take auto width */
     overflow: hidden; /* Prevent overflow */
@@ -100,37 +105,6 @@ html,body {
   .nav img {
     width: 40px; /* Adjust image size for mobile */
     height: auto; /* Maintain aspect ratio */
-  }
-
-  /* Optional: Add a responsive hamburger menu for smaller screens */
-  .hamburger {
-    display: none; /* Hide by default */
-    flex-direction: column;
-    cursor: pointer; /* Pointer on hover */
-  }
-
-  .hamburger div {
-    height: 3px;
-    width: 30px;
-    background-color: #333;
-    margin: 4px 0; /* Space between hamburger lines */
-  }
-
-  /* Show hamburger menu on smaller screens */
-  @media only screen and (max-width: 768px) {
-    .hamburger {
-      display: flex; /* Show hamburger menu */
-    }
-
-    .nav ul {
-      display: none; /* Hide menu by default on mobile */
-      flex-direction: column; /* Stack vertically when shown */
-      width: 100%; /* Full width */
-    }
-
-    .nav.active ul {
-      display: flex; /* Show menu when active */
-    }
   }
 }
 
