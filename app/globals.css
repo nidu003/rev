@@ -39,7 +39,7 @@ html,body {
 
 
 
-/* Mobile view styles */
+
 @media only screen and (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -80,7 +80,7 @@ html,body {
   }
 }
 
-/* Toggle button animation */
+
 .nav-toggle-btn:hover span {
   background-color: #666;
 }
@@ -179,10 +179,10 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1; /* Ensure the background image is behind the content */
+  z-index: -1; 
 }
 
-/* Mobile styles (max-width: 768px) */
+
 @media only screen and (max-width: 768px) {
   .containerh {
     padding: 10px;
@@ -274,7 +274,6 @@ p {
 
 
 /*Feature*/
-/* styles/globals.css */
 .containerf {
   max-width: 1200px;
   margin: 40px auto;
@@ -317,7 +316,7 @@ p {
 }
 
 .feature-text {
-  margin-left: 10px; /* add some space between the image and text */
+  margin-left: 10px; 
 }
 
 
@@ -332,7 +331,7 @@ p {
 
 
 /*Services*/
-/* components/RepositionServices.module.css */
+
 
 .containerss {
   max-width: 100%;
@@ -404,55 +403,54 @@ p {
 
 
 @media only screen and (max-width: 480px) {
-  /* Adjust the grid layout for mobile view */
+  
   .servicesGrid {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     margin-left: -90px;
   }
 
-  /* Adjust the service card width and padding for mobile view */
+  
   .serviceCard {
-    width: 90%; /* Reduce the width to fit the smaller screen */
-    padding: 10px; /* Reduce the padding to fit the smaller screen */
-    text-align: center; /* Center the service card content */
+    width: 90%; 
+    padding: 10px; 
+    text-align: center; 
   }
 
-  /* Adjust the icon width and margin for mobile view */
   .icon {
-    width: 30px; /* Reduce the icon width to fit the smaller screen */
-    margin: 0 auto; /* Center the icon */
+    width: 30px; 
+    margin: 0 auto; 
   }
 
-  /* Adjust the typography for mobile view */
+
   .Heads {
-    font-size: 14px; /* Reduce the font size to fit the smaller screen */
+    font-size: 14px; 
     text-align: center; 
     margin-left: -160px;
   }
 
   .titless {
-    font-size: 18px; /* Reduce the font size to fit the smaller screen */
-    text-align: center; /* Center the title */
+    font-size: 18px; 
+    text-align: center; 
   }
 
   .subtitless {
-    font-size: 0.9rem; /* Reduce the font size to fit the smaller screen */
-    text-align: center; /* Center the subtitle */
+    font-size: 0.9rem; 
+    text-align: center; 
     margin-left: -100px;
   }
 
   .serviceCard h3 {
-    font-size: 1rem; /* Reduce the font size to fit the smaller screen */
-    text-align: center; /* Center the service card heading */
+    font-size: 1rem; 
+    text-align: center; 
   }
 
   .serviceCard p {
-    font-size: 12px; /* Reduce the font size to fit the smaller screen */
-    text-align: center; /* Center the service card paragraph */
+    font-size: 12px; 
+    text-align: center; 
   }
 
-  /* Add this to center all elements in the container */
+  
   .containerss {
     text-align: center;
   }
