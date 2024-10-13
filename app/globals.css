@@ -1009,119 +1009,125 @@ button {
 
 /*About*/
 .About-container {
+  
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  flex-direction: row; /* Default to row layout */
+ 
 }
 
 .About-content {
   display: flex;
-  flex-direction: row; /* Default to row layout */
+  flex-direction: row;
   align-items: center;
 }
 
 .About-image {
-  margin-right: 20px; /* Space between image and text */
+  margin-right: 20px;
 }
 
 .About-text {
-  flex: 1; /* Allow text to take remaining space */
+  flex: 1;
 }
+
+
 
 .About-container p {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.About-text h1 {
+
+
+.About-text h1{
   font-size: 18px;
   font-weight: 700;
   color: #FFC787;
   font-family: Open Sans;
 }
 
-.About-text h2 {
+.About-text h2{
   font-size: 28px;
   font-weight: 700;
   color: #3E4A59;
-  overflow: hidden; /* Added to prevent text overflow */
-  text-overflow: ellipsis; /* Added to show ellipsis if text is too long */
-  white-space: nowrap; /* Added to prevent line breaks */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-  .About-container {
-    flex-direction: column; /* Stack elements vertically on tablet */
-    align-items: center; /* Center align contents */
-  }
+.About-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-  .About-content {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center align contents */
-  }
+.About-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  .About-image {
-    width: 80%; /* Responsive image width */
-    height: auto; 
-    margin-bottom: 20px; /* Space below image */
-  }
+.about-text{
+  margin-left: 200px;
+}
 
-  .About-text {
-    text-align: center; /* Center text on smaller screens */
-    width: 100%; /* Full width for text */
-  }
-
-  .About-text h2 {
-    font-size: 24px; /* Adjust heading size */
-  }
+.About-image{
+  margin-left: 150px;
 }
 
 @media (max-width: 768px) {
-  .About-container {
-    padding: 10px; /* Reduced padding for mobile */
-    margin-left: 0; /* Reset margin */
-    width: 100%; /* Full width */
+  .containerrr {
+    margin: 20px;
+    padding: 10px;
+  }
+
+ .About-container {
+    width: 420px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 500px;
   }
 
   .About-content {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center align contents */
-  }
-
-  .About-image {
-    width: 100%; /* Full width for image */
-    height: auto; 
-    margin-bottom: 10px; /* Space below image */
+    display: flex;
+    flex-direction: column;
   }
 
   .About-text {
-    width: 100%; /* Full width for text */
-    margin-bottom: 20px; /* Space below text */
-    text-align: center; /* Center text */
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+ .About-image {
+    width: 60%;
+    height: auto; 
+    margin-bottom: 20px;
   }
 
   .button, .button2 {
-    width: 100%; /* Full width buttons */
+    width: 50%;
     padding: 10px;
     font-size: 16px;
     text-align: center; 
   }
 
-  .About-text p {
-    font-size: 14px; /* Smaller font size */
-  }
-
   h1 {
-    font-size: 18px; /* Adjust heading size */
+    font-size: 18px;
   }
 
   h2 {
-    font-size: 14px; /* Adjust heading size for mobile */
-    overflow: hidden; /* Added to prevent text overflow */
-    text-overflow: ellipsis; /* Added to show ellipsis if text is too long */
-    white-space: nowrap; /* Added to prevent line breaks */
+    font-size: 16px;
+  }
+
+  .About-text p {
+    width: 100%;
+   font-size: 14px;
+
+  }
+
+  .About-container{
+    margin-left: 0px;
+  }
+
+  .About-image{
+    margin-left: 10%;
   }
 }
