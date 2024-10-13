@@ -7,7 +7,7 @@ const TestimonialCard = () => {
     <h1 className="Heads"style={{ textAlign: 'center' }}>Industry-Specific Case Studies</h1>
       <h2 className="titless" style={{ textAlign: 'center' }}>Testimonials</h2>
       <div style={{ backgroundColor: '#FFAF00', height: '2px', width: '150px', margin: '10px auto' }} /> 
-      <p className="subtitless" style={{ textAlign: 'center' }}>
+      <p className="subtitlest" style={{ textAlign: 'center' }}>
       testimonials from roofing companies we’ve helped increase revenue through automation.
       </p>
        
