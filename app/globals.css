@@ -1008,136 +1008,126 @@ button {
 
 
 /*About*/
-/* Reviews and Communication Containers */
-.reviews-container,
-.communication-container {
+.About-container {
+  
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+ 
 }
 
-/* Reviews and Communication Content */
-.reviews-content,
-.communication-content {
+.About-content {
   display: flex;
-  flex-direction: row; /* Horizontal layout for larger screens */
+  flex-direction: row;
   align-items: center;
-  max-width: 1200px; /* Constrain the width for better readability */
-  width: 100%;
-  justify-content: space-between; /* Space between text and image */
 }
 
-.reviews-text,
-.communication-text {
-  flex: 1;
+.About-image {
   margin-right: 20px;
 }
 
-.reviews-image img,
-.communication-image img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+.About-text {
+  flex: 1;
 }
 
-/* Typography */
-.reviews-text h1,
-.communication-text h1 {
-  font-size: 36px;
+
+
+.About-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+.About-text h1{
+  font-size: 18px;
   font-weight: 700;
   color: #FFC787;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 10px;
+  font-family: Open Sans;
 }
 
-.reviews-text h2,
-.communication-text h2 {
+.About-text h2{
   font-size: 28px;
   font-weight: 700;
   color: #3E4A59;
+}
+
+.About-container {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-.reviews-text p,
-.communication-text p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #777777;
+.About-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Buttons */
-.button,
-.button2 {
-  padding: 10px 20px;
-  background-color: #FFC787;
-  border: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.about-text{
+  margin-left: 200px;
 }
 
-.button:hover,
-.button2:hover {
-  background-color: #3E4A59;
+.About-image{
+  margin-left: 150px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .reviews-content,
-  .communication-content {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    align-items: center;
-    text-align: center;
+  .containerrr {
+    margin: 20px;
+    padding: 10px;
   }
 
-  .reviews-text,
-  .communication-text {
-    margin-right: 0;
+ .About-container {
+    width: 420px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 500px;
+  }
+
+  .About-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .About-text {
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+ .About-image {
+    width: 60%;
+    height: auto; 
     margin-bottom: 20px;
   }
 
-  .reviews-image img,
-  .communication-image img {
-    width: 80%; /* Responsive width for images */
-    margin-bottom: 20px;
+  .button, .button2 {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center; 
   }
 
   h1 {
-    font-size: 28px; /* Responsive heading sizes */
+    font-size: 18px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 16px;
   }
 
-  p {
-    font-size: 14px; /* Adjust paragraph size */
+  .About-text p {
+    width: 100%;
+   font-size: 14px;
+
   }
 
-  .button,
-  .button2 {
-    width: 100%; /* Full width buttons on mobile */
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .reviews-text h1,
-  .communication-text h1 {
-    font-size: 24px; /* Smaller heading size for mobile */
+  .About-container{
+    margin-left: 0px;
   }
 
-  .reviews-text h2,
-  .communication-text h2 {
-    font-size: 20px;
-  }
-
-  .reviews-image img,
-  .communication-image img {
-    width: 100%; /* Full width images for smaller screens */
+  .About-image{
+    margin-left: 10%;
   }
 }

@@ -16,12 +16,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="communication-container">
-        <div className="communication-content">
-          <div className="communication-image">
+      <div className="About-container">
+        <div className="About-content">
+          <div className="About-image">
             <img src="/Group 14.png" alt="Online Reviews" />
           </div>
-          <div className="communication-text">
+          <div className="About-text">
             <h2>Focus on Industry Expertise</h2>
 
             <p>With deep expertise in the roofing industry, we understand the unique challenges you face. Our tailored solutions empower roofing companies to streamline processes, improve accuracy, and confidently bid on large commercial projects. By leveraging our industry insights and cutting-edge tools, you can enhance your competitive edge, win bigger contracts, and scale your business to new heights</p>

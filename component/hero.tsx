@@ -1,62 +1,41 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Hero = () => {
+const TestimonialCard = () => {
   return (
     <div>
-      <div className="containerh">
-        <div className="contenth">
-          <h1>UNLOCK LARGE COMMERCIAL <br/> ROOFING PROJECTS WITH<br/> AUTOMATED SALES AND MARKETING <br/> SOLUTIONS</h1>
-          <p>Helping Roofing Companies Add New Revenue Streams Through Targeted Client Outreach, Al-Driven Dispatching, And Automated Follow-Up Systems.</p>
-          <div className="buttons">
-            <button className="button">GET STARTED →</button>
-            <button className="button2">SCHEDULE A DEMO →</button>
-          </div>
-        </div>
-        <div className="image">
-          <Image src="/Group.svg" alt="Image of a city model" width={508} height={493} />
-        </div>
-        <div className="background-image">
-          <Image src="/Vector 1.png" alt="Background image" width={692} height={692}/>
-        </div>
+    <h1 className="Heads"style={{ textAlign: 'center' }}>Industry-Specific Case Studies</h1>
+      <h2 className="titless" style={{ textAlign: 'center' }}>Testimonials</h2>
+      <div style={{ backgroundColor: '#FFAF00', height: '2px', width: '150px', margin: '10px auto' }} /> 
+      <p className="subtitlest" style={{ textAlign: 'center' }}>
+      testimonials from roofing companies we’ve helped increase revenue through automation.
+      </p>
+       
+    <div className="testimonial-card">
+      
+      <div className="testimonial-image">
+        <Image
+          src="/Ellipse 17.png"
+          alt="Testimonial Image"
+          width={100}
+          height={100}
+          className="rounded-full"
+        />
       </div>
-
-
-      <br/>
-      <div style={{ backgroundColor: '#FFAF00', height: '2px', width: '300px', margin: '10px auto' }} /> 
-      <div className="containerf">
-        <div className="rowf" style={{ display: 'flex', flexWrap: 'nowrap' }}>
-          <div className="col">
-            <div className="feature-item">
-              <Image src="/mas.png" alt="Online Reviews Icon" width={65} height={65} style={{ marginRight: -150 }}/>
-              <div className="feature-text">
-                <h2>Online Reviews</h2>
-                <p>Improve your ratings and build your <br />reputation to win more business.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="feature-item">
-              <Image src="/tabler_messages.png" alt="Messaging Icon" width={65} height={65} style={{ marginRight: -200, marginLeft: 100 }}/>
-              <div className="feature-text">
-                <h2>Messaging</h2>
-                <p>Reach your customers <br/>wherever they are.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="feature-item">
-              <Image src="/rocket.png" alt="Payments Icon" width={65} height={65} style={{ marginRight: -180, marginLeft: 50}}/>
-              <div className="feature-text">
-                <h2>Payments</h2>
-                <p>Fast, easy, secure payments.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="testimonial-content">
+        <h3 className="testimonial-name">Hannah Schmitt</h3>
+        <p className="testimonial-role">Lead designer</p>
+        <p className="testimonial-text">
+          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Cursus Nibh Mauris,
+          Nec Turpis Orci Lectus Maecenas. Suspendisse Sed Magna Eget Nibh In
+          Turpis. Consequat Duis Diam Lacus Arcu. Faucibus Venenatis Felis Id
+          Augue Sit Cursus Pellentesque Enim Lorem Ipsum Dolor Sit Amet,
+          Consectetur Adipiscing Elit. Cursus Nibh Mauris, Nec Turpis
+        </p>
       </div>
+    </div>
     </div>
   );
 };
 
-export default Hero;
+export default TestimonialCard;
