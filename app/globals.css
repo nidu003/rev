@@ -1011,22 +1011,29 @@ button {
 .About-container {
   padding: 20px;
   display: flex;
-  justify-content: center; /* Centering the container */
+  justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .About-content {
   display: flex;
-  flex-direction: row; /* Horizontal layout for larger screens */
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure flex items wrap */
+  width: 100%; /* Full width for content */
 }
 
 .About-image {
   margin-right: 20px;
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .About-text {
   flex: 1;
+  margin-left: 20px; /* Adjust margin for spacing */
 }
 
 .About-container p {
@@ -1047,83 +1054,77 @@ button {
   color: #3E4A59;
 }
 
-/* Flex container for wider screens */
-.About-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-text {
-  margin-left: 20px; /* Adjusted margin for better spacing */
-}
-
-.About-image {
-  margin-left: 20px; /* Adjusted margin for better spacing */
-}
-
+/* Adjust layout for smaller screens */
 @media (max-width: 768px) {
   .About-container {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    align-items: center; /* Center align items */
-    width: 100%; /* Full width on smaller screens */
-    padding: 10px; /* Reduced padding */
-    margin-left: 0; /* Reset margin */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
   }
 
   .About-content {
-    flex-direction: column; /* Change to column layout */
-    align-items: center; /* Center align items */
-    width: 100%; /* Full width */
-  }
-
-  .About-text {
-    width: 100%; /* Full width */
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     text-align: center; /* Center text */
   }
 
-  .About-image {
-    width: 60%; /* Responsive width */
-    height: auto; 
-    margin: 0; /* Reset margin */
-    margin-bottom: 20px; /* Space below image */
+  .About-text {
+    width: 100%;
+    margin-left: 0; /* Remove left margin for mobile */
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  .button,
-  .button2 {
-    width: 50%; /* Responsive button width */
-    padding: 10px; 
-    font-size: 16px; 
-    text-align: center; 
+  .About-image {
+    width: 80%; /* Image takes 80% of container width */
+    margin: 0 auto 20px auto; /* Center image and add bottom margin */
+    height: auto;
+  }
+
+  .button, .button2 {
+    width: 80%; /* Buttons take 80% of container width */
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0; /* Add space between buttons */
   }
 
   h1 {
-    font-size: 18px; /* Responsive h1 size */
+    font-size: 18px; /* Responsive heading size */
   }
 
   h2 {
-    font-size: 16px; /* Responsive h2 size */
+    font-size: 24px; /* Responsive subheading size */
   }
 
   .About-text p {
-    width: 100%; /* Full width for paragraphs */
+    width: 100%;
     font-size: 14px; /* Adjusted font size */
   }
 }
 
+/* Further adjustments for mobile (max-width: 480px) */
 @media (max-width: 480px) {
   .About-text h2 {
-    font-size: 24px; /* Further reduce h2 size for mobile */
+    font-size: 20px; /* Further reduce heading size */
   }
 
   .About-text h1 {
-    font-size: 16px; /* Further reduce h1 size for mobile */
+    font-size: 16px;
   }
 
-  .button,
-  .button2 {
-    width: 100%; /* Full width for buttons on mobile */
+  .button, .button2 {
+    width: 100%; /* Full width buttons on small screens */
+  }
+
+  .About-image {
+    width: 100%; /* Full width for image on mobile */
+    margin-bottom: 20px;
+  }
+
+  .About-text p {
+    font-size: 14px;
   }
 }
