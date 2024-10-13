@@ -1046,6 +1046,9 @@ button {
   font-size: 28px;
   font-weight: 700;
   color: #3E4A59;
+  overflow: hidden; /* Added to prevent text overflow */
+  text-overflow: ellipsis; /* Added to show ellipsis if text is too long */
+  white-space: nowrap; /* Added to prevent line breaks */
 }
 
 /* Media Queries for Responsiveness */
@@ -1116,6 +1119,9 @@ button {
   }
 
   h2 {
-    font-size: 16px; /* Adjust heading size */
+    font-size: 14px; /* Adjust heading size for mobile */
+    overflow: hidden; /* Added to prevent text overflow */
+    text-overflow: ellipsis; /* Added to show ellipsis if text is too long */
+    white-space: nowrap; /* Added to prevent line breaks */
   }
 }
